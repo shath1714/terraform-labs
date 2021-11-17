@@ -17,7 +17,7 @@ resource "aws_iam_role" "s3_access_role" {
   ]
 }
 EOF
- 
+
 }
 #IAM Instance profile
 resource "aws_iam_instance_profile" "ec2_profile" {
@@ -30,7 +30,7 @@ resource "aws_iam_role_policy" "s3_bcuket_access_policy" {
   name = "s3_bcuket_access_policy"
   role = aws_iam_role.s3_access_role.id
 
-   policy = <<-EOF
+  policy = <<-EOF
   {
     "Version": "2012-10-17",
     "Statement": [

@@ -33,4 +33,3 @@ variable "tags" {
   default     = "ffhs-lab"
 }
 
-#EC2 instances with user data
